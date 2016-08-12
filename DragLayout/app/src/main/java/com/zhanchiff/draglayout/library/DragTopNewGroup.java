@@ -224,6 +224,8 @@ public class DragTopNewGroup extends ViewGroup {
                             (mBelowListener.canViewPullUP()||VAboveView.getTop() >=0)){
                         return true;
                     }
+                    if(child == VAboveView)
+                        return true;
                     return false;
                 }else{
                     return false;
